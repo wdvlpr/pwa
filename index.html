@@ -31,6 +31,7 @@
     async function registerSW() {
       if ('serviceWorker' in navigator) {
         try {
+          console.log('SW registration Ok');
           await navigator
                 .serviceWorker
                 .register('serviceworker.js');
